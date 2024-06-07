@@ -38,17 +38,14 @@ public class ListMine
 
     public void remove(int value)
     {
-        Node current = this.head;
-        Node currentBefore;
-        Node currentAfter;
-        while (current != null)
-        {
-            if (current.value == value)
-            {
+        Node before = null;
+        Node current = null;
 
-            }
-            current = current.next;
-        }
+        this.Search(value, ref current, ref before);
+
+        before.next = current.next;
+
+        
     }
 
     // public void insertPosition(int value,int pos) {
@@ -74,19 +71,26 @@ public class ListMine
     public void insertMiddle(int value)
     {
         Node newNode = new Node(value);
-        Node after = this.head.next;
         Node current = this.head;
+        Node before = null;
+        // if(newNode.value < current.value) {
+        //     newNode.next = this.head;
+        //     this.head = newNode;
+        //     return;
+        // }
         while (current != null)
         {
-            if (current.value < newNode.value && after.value > newNode.value)
+            // if(after == null) {
+            //     current.next = newNode;
+            //     break;
+            // }
+            before = current;
+            current = current.next;
+            if (before.value < newNode.value && current.value > newNode.value)
             {
-                current.next = newNode;
-                newNode.next = after;
-            }
-            else
-            {
-                after = after.next;
-                current = current.next;
+                before.next = newNode;
+                newNode.next = current;
+                break;
             }
         }
     }
@@ -99,5 +103,23 @@ public class ListMine
         this.end = newNode;
 
         newNode.next = null;
+    }
+
+    public Boolean Search(int value, ref Node current, ref Node before)
+    {
+        current = this.head;
+        before = null;
+
+        while (current != null)
+        {
+            if (current.value == value)
+            {
+                return (true);
+            }
+            before = current;
+            current = current.next;
+        }
+        return false;
+
     }
 }
