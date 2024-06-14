@@ -10,7 +10,7 @@ namespace Lista{
             lista.insertSort(6);
             // lista.insertEnd(10);
             // lista.insertEnd(11);
-            lista.remove(-2);
+            lista.remove(6);
             // lista.insertEnd(1);
             // lista.insertEnd(2);
             lista.showList();

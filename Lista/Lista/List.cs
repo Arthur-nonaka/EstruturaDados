@@ -77,6 +77,7 @@ public class ListMine
             else {
                 this.head = this.head.next;
             }
+            current = null;
         }
     }
 
