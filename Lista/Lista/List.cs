@@ -68,25 +68,25 @@ public class ListMine
 
     // }
 
-    public void insertMiddle(int value)
+    public void insertSort(int value)
     {
         Node newNode = new Node(value);
         Node current = this.head;
         Node before = null;
-        // if(newNode.value < current.value) {
-        //     newNode.next = this.head;
-        //     this.head = newNode;
-        //     return;
-        // }
+        if(newNode.value < current.value) {
+            newNode.next = this.head;
+            this.head = newNode;
+            return;
+        }
         while (current != null)
         {
-            // if(after == null) {
-            //     current.next = newNode;
-            //     break;
-            // }
             before = current;
             current = current.next;
-            if (before.value < newNode.value && current.value > newNode.value)
+            if(current == null) {
+                before.next = newNode;
+                break;
+            }
+            if (before.value <= newNode.value && current.value >= newNode.value)
             {
                 before.next = newNode;
                 newNode.next = current;

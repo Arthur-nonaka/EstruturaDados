@@ -5,14 +5,13 @@ namespace Lista{
         static void Main(string[] args) {
             ListMine lista = new ListMine();
             lista.insertStart(1);
-            lista.insertEnd(100);
-            lista.insertMiddle(2);
-            lista.insertMiddle(5);
-            lista.insertMiddle(6);
-            lista.insertMiddle(3);
-            lista.remove(5);
-            // lista.insertMiddle(11);
-            // lista.insertMiddle(-1);
+            lista.insertSort(-2);
+            lista.insertSort(5);
+            lista.insertSort(6);
+            lista.insertSort(100);
+            lista.insertSort(-10);
+            lista.insertSort(100);
+            lista.insertSort(5);
             lista.showList();
 
         }
