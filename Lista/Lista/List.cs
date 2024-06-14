@@ -20,10 +20,19 @@ public class ListMine
         }
     }
 
+    public Boolean isNull()
+    {
+        if (this.head == null && this.end == null)
+        {
+            return (true);
+        }
+        return (false);
+    }
+
     public void insertStart(int value)
     {
         Node newNode = new Node(value);
-        if (this.head == null)
+        if (this.isNull())
         {
             this.end = newNode;
             this.head = newNode;
@@ -36,16 +45,39 @@ public class ListMine
 
     }
 
+    public void insertEnd(int value)
+    {
+        Node newNode = new Node(value);
+
+        if (this.isNull())
+        {
+            this.head = newNode;
+            this.end = newNode;
+        }
+        else
+        {
+            this.end.next = newNode;
+            this.end = newNode;
+
+            newNode.next = null;
+        }
+
+    }
     public void remove(int value)
     {
         Node before = null;
         Node current = null;
 
-        this.Search(value, ref current, ref before);
-
-        before.next = current.next;
-
-        
+        if (this.Search(value, ref current, ref before))
+        {
+            if (before != null)
+            {
+                before.next = current.next;
+            }
+            else {
+                this.head = this.head.next;
+            }
+        }
     }
 
     // public void insertPosition(int value,int pos) {
@@ -73,7 +105,14 @@ public class ListMine
         Node newNode = new Node(value);
         Node current = this.head;
         Node before = null;
-        if(newNode.value < current.value) {
+        if (this.isNull())
+        {
+            this.head = newNode;
+            this.end = newNode;
+            return;
+        }
+        if (newNode.value < current.value)
+        {
             newNode.next = this.head;
             this.head = newNode;
             return;
@@ -82,8 +121,10 @@ public class ListMine
         {
             before = current;
             current = current.next;
-            if(current == null) {
+            if (current == null)
+            {
                 before.next = newNode;
+                this.end = newNode;
                 break;
             }
             if (before.value <= newNode.value && current.value >= newNode.value)
@@ -95,15 +136,6 @@ public class ListMine
         }
     }
 
-    public void insertEnd(int value)
-    {
-        Node newNode = new Node(value);
-
-        this.end.next = newNode;
-        this.end = newNode;
-
-        newNode.next = null;
-    }
 
     public Boolean Search(int value, ref Node current, ref Node before)
     {
