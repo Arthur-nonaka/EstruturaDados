@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "uD3id04nHfDMW1PZdpmQz99FMYlS9sDUyaUO/RHHCDfZlLVjUtCCzRp1yzRns+og1Nt6J19aQRfFce1wLtOX7g==",
+  "dgSpecHash": "SfD5MGIwrps=",
   "success": true,
   "projectFilePath": "C:\\Users\\aluno\\Desktop\\EstruturaDados\\Lista\\Lista.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\aluno\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.31\\microsoft.netcore.app.ref.6.0.31.nupkg.sha512",
+    "C:\\Users\\aluno\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.31\\microsoft.windowsdesktop.app.ref.6.0.31.nupkg.sha512",
+    "C:\\Users\\aluno\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.31\\microsoft.aspnetcore.app.ref.6.0.31.nupkg.sha512",
+    "C:\\Users\\aluno\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.31\\microsoft.netcore.app.host.win-x64.6.0.31.nupkg.sha512"
+  ],
   "logs": []
 }

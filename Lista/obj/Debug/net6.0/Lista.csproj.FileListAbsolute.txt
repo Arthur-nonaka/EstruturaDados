@@ -1,4 +1,3 @@
-C:\Users\aluno\Desktop\EstruturaDados\Lista\obj\Debug\net6.0\Lista.csproj.AssemblyReference.cache
 C:\Users\aluno\Desktop\EstruturaDados\Lista\obj\Debug\net6.0\Lista.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\aluno\Desktop\EstruturaDados\Lista\obj\Debug\net6.0\Lista.AssemblyInfoInputs.cache
 C:\Users\aluno\Desktop\EstruturaDados\Lista\obj\Debug\net6.0\Lista.AssemblyInfo.cs
@@ -28,3 +27,4 @@ D:\Projetos\EstruturaDados\Lista\obj\Debug\net6.0\refint\Lista.dll
 D:\Projetos\EstruturaDados\Lista\obj\Debug\net6.0\Lista.pdb
 D:\Projetos\EstruturaDados\Lista\obj\Debug\net6.0\Lista.genruntimeconfig.cache
 D:\Projetos\EstruturaDados\Lista\obj\Debug\net6.0\ref\Lista.dll
+C:\Users\aluno\Desktop\EstruturaDados\Lista\obj\Debug\net6.0\Lista.sourcelink.json
