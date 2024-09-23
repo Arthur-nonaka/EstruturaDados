@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\aluno\\.nuget\\packages\\": {}
+    "C:\\Users\\zenab\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aluno\\Desktop\\EstruturaDados\\Pilha\\Pilha.csproj",
+      "projectUniqueName": "D:\\Projetos\\EstruturaDados\\Pilha\\Pilha.csproj",
       "projectName": "Pilha",
-      "projectPath": "C:\\Users\\aluno\\Desktop\\EstruturaDados\\Pilha\\Pilha.csproj",
-      "packagesPath": "C:\\Users\\aluno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aluno\\Desktop\\EstruturaDados\\Pilha\\obj\\",
+      "projectPath": "D:\\Projetos\\EstruturaDados\\Pilha\\Pilha.csproj",
+      "packagesPath": "C:\\Users\\zenab\\.nuget\\packages\\",
+      "outputPath": "D:\\Projetos\\EstruturaDados\\Pilha\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\aluno\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\zenab\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -64,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

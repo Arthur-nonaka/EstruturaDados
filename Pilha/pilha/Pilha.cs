@@ -95,6 +95,15 @@ public class Pilha
         }
     }
 
+    public void Transfer(ref Pilha pilha) {
+        Node current = this.top;
+        while(current != null) {
+            pilha.Push(current.value);
+            current = current.next;
+        }
+        pilha.Invert();
+    }
+
     public bool isNull()
     {
         if (this.top == null)
@@ -102,6 +111,23 @@ public class Pilha
             return true;
         }
         return false;
+    }
+
+    public bool isPalindromo() {
+        Pilha pilha = new Pilha();
+        Node current = this.top;
+        while(current != null) {
+            pilha.Push(current.value);
+            current = current.next;
+        }
+        current = this.top;
+        while(current != null) {
+            if( current.value != pilha.Pop().value) {
+                return false;
+            }
+            current = current.next;
+        }
+        return true;
     }
 
     public void Show()

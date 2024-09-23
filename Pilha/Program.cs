@@ -24,15 +24,46 @@ namespace Atividade{
             pilha.Push(-13);
             pilha.Push(0);
             pilha.Push(-1);
+
+            // Questao 2 Contar numero de elementos
             // Console.WriteLine(pilha.Count());
+
+            // Questao 3 Contar numero impares
             // Console.WriteLine(pilha.CountOddNumbers());
 
-            pilha.SplitInTwo(ref pilha2, ref pilha3);
+            //Questao 4 Dividir
+
+            // pilha.SplitInTwo(ref pilha2, ref pilha3);
+            // pilha.Show();
+            // Console.WriteLine("");
+            // pilha2.Show();
+            // Console.WriteLine("");
+            // pilha3.Show();
+
+            //Questao 5 Inverter
+
+            // pilha.Push(1);
+            // pilha.Push(4);
+            // pilha.Push(3);
+
+            // pilha.Invert();
+            // pilha.Show();
+
+            //Questao 6 Palindromo - estou usando int no lugar de string, mas a logica é a mesma
+            // pilha.Push(1);
+            // pilha.Push(2);
+            // pilha.Push(3);
+            // pilha.Push(3);
+            // pilha.Push(1);
+
+            // Console.WriteLine(pilha.isPalindromo());
+
+            //Questao 7 Transferir Elementos
+            
+            pilha.Transfer(ref pilha2);
             pilha.Show();
-            Console.WriteLine("");
             pilha2.Show();
-            Console.WriteLine("");
-            pilha3.Show();
+
 
         }
     }
